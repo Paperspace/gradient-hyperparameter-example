@@ -1,8 +1,8 @@
 import paperspace
 paperspace.config.PAPERSPACE_API_KEY = '...'
 
-gpuTypes = ['P5000', 'K80']
-epochs = [0,10]
+gpuTypes = ['P5000', 'V100']
+epochs = [10,100,500]
 n=0
 
 for gpuType in gpuTypes:
