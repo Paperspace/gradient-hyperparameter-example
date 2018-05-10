@@ -10,4 +10,4 @@ for gpuType in gpuTypes:
     print "job " + str(n)
     n=n+1
     runcmd = 'python main.py --epochs ' + str(ep)
-    paperspace.jobs.create({'command': runcmd, 'project': 'myproject', 'machineType': gpuType, 'container': 'paperspace/pytorch'}, no_logging=True)
+    paperspace.jobs.create({'workspace': 'main.py' ,'command': runcmd, 'project': 'myproject', 'machineType': gpuType, 'container': 'paperspace/pytorch'}, no_logging=True)
